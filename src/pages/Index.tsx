@@ -12,7 +12,9 @@ const Index = () => {
       {/* Header/Navigation */}
       <header className="bg-white py-4 shadow-sm">
         <div className="container max-w-6xl mx-auto px-4 flex justify-between items-center">
-          <div className="text-primary font-bold text-2xl">Uranu Services</div>
+          <div className="flex items-center">
+            <img src="/logo.png" alt="Uranu Services Logo" className="h-12 mr-3" />
+          </div>
           <nav className="hidden md:flex gap-6">
             <a href="#diensten" className="text-gray-600 hover:text-primary">Diensten</a>
             <a href="#opleiding" className="text-gray-600 hover:text-primary">Opleiding</a>
@@ -31,6 +33,9 @@ const Index = () => {
       {/* Hero Section */}
       <section className="hero-section min-h-[80vh] flex items-center justify-center text-white px-4">
         <div className="container max-w-6xl mx-auto text-center animate-fade-in">
+          <div className="flex justify-center mb-8">
+            <img src="/logo.png" alt="Uranu Services Logo" className="h-32" />
+          </div>
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
             Verkeersregelaar Opleiding
           </h1>
@@ -196,7 +201,9 @@ const Index = () => {
         <div className="container max-w-6xl mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div>
-              <h3 className="text-xl font-bold mb-4">Uranu Services</h3>
+              <div className="flex items-center mb-4">
+                <img src="/logo.png" alt="Uranu Services Logo" className="h-16 mr-2" />
+              </div>
               <p className="text-white/80">
                 Professionele verkeersveiligheidsoplossingen voor al uw behoeften.
               </p>
@@ -222,10 +229,10 @@ const Index = () => {
               <h4 className="text-lg font-semibold mb-4">Diensten</h4>
               <ul className="space-y-2 text-white/80">
                 <li>
-                  <a href="#" className="hover:text-white">Verkeer & Veiligheid</a>
+                  <a href="#diensten" className="hover:text-white">Verkeer & Veiligheid</a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white">Verkeersregelaar Opleiding</a>
+                  <a href="#opleiding" className="hover:text-white">Verkeersregelaar Opleiding</a>
                 </li>
               </ul>
             </div>
